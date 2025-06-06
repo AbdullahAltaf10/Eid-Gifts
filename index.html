@@ -41,8 +41,8 @@
     position: relative;
     width: 30px;
     height: 30px;
-    background: radial-gradient(circle at 25% 50%, var(--color, #FFD700) 50%, transparent 51%),
-                radial-gradient(circle at 50% 50%, transparent 60%, var(--color, #004d00) 61%);
+    background: radial-gradient(circle at 25% 50%, var(--color, #ffffff) 50%, transparent 51%),
+                radial-gradient(circle at 50% 50%, transparent 60%, var(--color, #032c03) 61%);
     border-radius: 50%;
     opacity: 0.6;
     margin: 0 10px;
@@ -189,31 +189,50 @@ button:hover {
 
   <script>
   const baskets = {
-    "aman": { password: "aman01", gift: "🌟 Eid [Mubarak Aman! Your smile is a gift to us all!, missing you this Eid" },
-    "ureen": { password: "ureen26", gift: "🌟 Ureen, aaj ghussa kam kr de pehn, aur pichla bhi bhula de ghussa 😂, Eid Mubarik !" },
-    "isba": { password: "isba02", gift: "🌙 Isba, wishing you a joyful Eid with all your dreams fulfilled!" },
-    "hania": { password: "hania03", gift: "🐐 Hania, Eid Mubarik, bartan dho dein khany keh" },
-    "hafsa": { password: "hafsa04", gift: "🎁 Hafsa, Eid Mubarak! Have a great Eid" },
-    "habiba": { password: "habiba05", gift: "💖 Habiba, you will allways be precious. Hope you have the best Eid!" },
-    "laiba": { password: "laiba06", gift: "🕊️ Laiba, may this Eid bring peace, joy, and endless blessings to you!" },
-    "rafay bhatti": { password: "rafayb07", gift: "⭐ Eid Mubarik, Bhatti sab !" },
-    "tayyaba": { password: "tayyaba08", gift: "⭐ Eid Mubarik Tayyaba!, may this be you best Eid ever" },
-    "aiman": { password: "aiman09", gift: "⭐ Aiman, Happy to have friends like you, Eid Mubarik!" },
-    "summer": { password: "summer10", gift: "⭐ Summer, Happy to have friends like you, Eid Mubarik!" },
-    "haneea": { password: "haneea11", gift: "⭐ Hanoo, Hope you have all your wishes fullfilled this Eid, Cutie!" },
-    "esha": { password: "esha12", gift: "⭐ Esha, Blessed to have czns like you, Eid Mubarik!" },
-    "amna": { password: "amna13", gift: "⭐ Maina Baji, Blessed to have czns like you, wish we czns could spend more time together, Eid Mubarik!" },
-    "eman": { password: "eman14", gift: "⭐ Mano, Blessed to have czns like you, Eid Mubarik!!" },
-    "hareem": { password: "hareem15", gift: "⭐ Hareem Baji, Blessed to have czns like you, Eid Mubarik! & advance Shadi Mubarik, dubara website nhi bnai jai gi mujh sa 😢" },
-    "fouzia": { password: "fouzia16", gift: "⭐ Mam, Eid Mubarik, blessed to have you as my teacher, remember me in your prayers! 😊" },
-    "uswah": { password: "uswah17", gift: "⭐ Uswah Uswah Uswah, Eid Mubarik!, aur kya tareefain kron tumhari, time kam ha 😂, but thanks for being besides me" },
-    "manal": { password: "manal18", gift: "⭐ Manal Baji, Blessed to have czns like you, Eid Mubarik!!" },
-    "sonia": { password: "sonia19", gift: "⭐ Mam, Eid Mubarik!, wish I could spend more time with my favourite teacher next semester" },
-    "eman mehmood": { password: "eman20", gift: "⭐ Eman (JBL), yeh na soochna summer aaya ha to bhol gaya hon, Eid Mubarik Mano!" },
-    "hisham": { password: "hisham21", gift: "⭐ Eid Mubarik!, mehnga kida aa dangar" },
-    "ikrimah": { password: "ikrimah22", gift: "⭐ Eid Mubarik! Mufti sab, Beopari, Czn, Hafuz, Wada L*** " },
-    "qasim": { password: "qasim23", gift: "⭐ Eid Mubarik Malik G!" },
-    "daud": { password: "daoud24", gift: "⭐ Eid Mubarik Doodie, Brothers from another Mother!" },
+    "khadija": { password: "khadija01", gift: "🌟 Eid Mubarak khadija we were good friends pta ni kis ki nazr lag gayi but postive for future hahah stay blessed" },
+    "qaiser": { password: "qaiser02", gift: "🌟 Qaiser chachu: Eid Mubarak to the chachu with the royal name and VIP vibes!👑" },
+    "muddassir": { password: "muddassir02", gift: "🌙 Moody Chachu, Eid mubark g masero" },
+    "ayesha": { password: "ayesha03", gift: "🐐 Moto, Eid Mubarik, bartan dho dena khany keh" },
+    "shohaib": { password: "shohaib04", gift: "Har outfit mein lagay hero, Shohaib Chachu ki Eid ho super stylish aur zero tension wali!” 😎" },
+    "habiba": { password: "habiba05", gift: "Eid Mubarak smile wali chachi ko, dua hai ke aaj gosht na jale! 🍛😄!" },
+    "mubashir": { password: "mubashir06", gift: "Eid Mubarak ghar ke boss ko, Allah aap ki jeb ko sabr de! 💸😂 " },
+    "rizwana": { password: "rizwana07", gift: "⭐ Eid Mubarik, Bhatti sabEid Mubarak hamari biryani queen ko, jinki cooking bhi duaon jaisi hoti hai! 🍚❤️ bas dantati bohut hein !" },
+    "basit": { password: "basit08", gift: "⭐ Kamyabi ki misaal, aur khamoshi mein haal — Eid Mubarak Basit Chachu, aap hain sab se khaas! Thank u so much for what u r doing for us " },
+    "mehreen": { password: "mehreen09", gift: "Nazakat aur andaaz ka perfect mix — Mehreen Chachi ko Eid Mubarak, full classy vibes ke saath!” 💅
+
+" },
+    "shahid": { password: "shahid10", gift: "Eid Mubarak ho mamo jinki har baat mein style aur har gesture mein pyar ho! 💫" },
+    "fani": { password: "fani11", gift: "Energy bomb 💣 — Fani aunty ki Eid ho full laughter wali!" },
+    "nadia": { password: "nadia12", gift: "Chamakte chehre wali chachi 🌟 — Eid Mubarak sparkle queen!" },
+    "farzana": { password: "farzana13", gift: "coolest advice machine 😎 — Eid Mubarak Khalo, asli OG!, so blessed to have u khalo" },
+    "bashir": { password: "bashir14", gift: "Aap ho woh Mamo jinke jokes ko samajhne mein 5 second aur hasne mein 5 minute lagtay hain! 😂Eid Mubarak legend Mamo " },
+    "altaf": { password: "altaf15", gift: "Baba ki daant mein pyaar, khamoshi mein dua,Aur jeb mein... thodi si Eidi bhi chhupi hoti hai 💵😂Eid Mubarak baba g!" },
+    "zaffer": { password: "zaffer16", gift: "Aap wo mamo ho jinka style bhi boss level hai aur har baat mein thoda suspense bhi rehta hai 😎🎩Allah ap ka liya asani kra! 💸😂" },
+    "momina": { password: "momina17", gift: "Soft, stylish & sweet 🍮 — Eid Mubarak Momani classy queen!" },
+    "vixx": { password: "vixx18", gift: "Eid Mubarak to the mystery person with the coolest name – drop your Eidi now! 🕶️💸" },
+    "muneeb": { password: "muneeb19", gift: "Masti ka doosra naam 😁 — Eid Mubarak, Muneeb Chachu full fun mode on!" },
+    "nosheen": { password: "nosheen20", gift: "Energy level full on, jokes ready like bombs — Fani Aunty ki Eid ho dhamaka style mein!” 💣😂" },
+    "farhana": { password: "farhana21", gift: "Muskurahat se ghar roshan ho jaye, Eid Mubarak ho khalo jinki baat bhi mithaas si lage!” 😊" },
+    "arisha": { password: "arisha22", gift: "Eid Mubarak meri drama queen! 👑Tayyar hone mein 2 ghantay, pics lene mein 200 😅Allah tumhari selfies aur shopping dono mein barkat de! 📸🛍️" },
+    "sulieman": { password: "sulieman23", gift: "Eid Mubarak chhote shehzade! 👑Har waqt masti + har waqt bhookh = asli Eid mode tum ho! 🍗😂Allah tumhari energy kabhi low na kare (aur volume thoda kam kar de" },
+    "asra": { password: "asra24", gift: "Soft, stylish & sweet 🍮 — Eid Mubarak Asra Chachi classy queen!" },
+    
+    "waqas": { password: "waqas25", gift: "Har milan mein ho maza, har baat mein ho hansi — Waqas Mamo ki Eid ho full entertaining!” 😄🎊" },
+    "muzamil": { password: "muzamil26", gift: "Eid Mubarak to the one who’s always lowkey funny and highkey sleepy! 😴🎊" },
+    "mehreen": { password: "mehreen27", gift: "Eid mubarik mehreen asa hi class ma shugal lgayi rkho" },
+    "ujala": { password: "ujala28", gift: "Eid mubarik ujala chotu si attitude queen ewww " },
+    "soha": { password: "soha29", gift: "Eid Mubarak Soha!Bakray ki qurbani ho ya friend ki rozi — tum har Eid pe drama queen hi rehti ho 😜Bas is dafa bakray se zyada photos na lo pls 📸🐐,and yes mohsin missing u this eid ewwww" },
+    "hadiya": { password: "hadiya30", gift: "Eid Mubarak Hadiya!Bakray ka dard tumse bardasht nahi hota, magar Eidi lena dil se aata hai! 😂Tears for goats, pockets for notes! 💵💧" },
+    "khadija": { password: "khadija31", gift: "Eid Mubarak Khadija!Tum bakray ki tasbeeh se pehle Eid ka status lagati ho 🤳Iss dafa bakray ki bhi izzat rakh lo plz 😆" },
+    "rida": { password: "rida32", gift: "Eid Mubarak Rida!Tum wo ho jo sirf Eidi leti ho, qurbani mein bas pose banati ho 📸💸Bakray ke horns se bachi raho iss Eid!" },
+    "mishal": { password: "mishal33", gift: "Eid Mubarak !Tum ho wo jo qurbani dekhte waqt awww keh kar video bana leti ho 😆Is Eid pe thora real reaction de dena pls!" },
+    "hira": { password: "hira34", gift: "Eid Mubarak Hira!Tum ho wo jo qurbani dekhte waqt awww keh kar video bana leti ho 😆Is Eid pe thora real reaction de dena pls!" },
+    "ayesha": { password: "ayesha35", gift: "Eid Mubarak Ayesha!Tum Eid pe bakray ki selfie lo aur caption lagao “Goat vibes only” 🐐📱Allah tumhari bakri wali bonding ko barkat de 😆" },
+    "sahar": { password: "sahar36", gift: "Eid Mubarak Sahar!Tum ho wo friend jo qurbani ke liye makeup kar ke aati ho 💄Bas knife se door rehna, bakray ne tumhe competition samajh liya hai 😜" },
+    "kainat": { password: "kainat37", gift: "Eid Mubarak Kainat!Tum Eid pe bakray ki selfie lo aur caption lagao “Goat vibes only” 🐐📱Allah tumhari bakri wali bonding ko barkat de 😆" },
+    "aiman": { password: "aiman38", gift: "Eid Mubarak Aiman!Tum ho wo friend jo bakray se zyada cute ban ke chhup jati ho, kahin qurbani na ho jaaye 😂" },
+    "eman": { password: "eman39", gift: "Eid Mubarak Eman!Bakray ka dard tumse bardasht nahi hota, magar Eidi lena dil se aata hai! 😂Tears for goats, pockets for notes! 💵💧" },
+    
     "rafay Mirza": { password: "rafaym25", gift: "⭐ Eid Mubarik Rafay!, Is Summer kya krna ha, DSA ?" }
   };
 
